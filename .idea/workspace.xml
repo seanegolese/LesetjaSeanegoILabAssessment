@@ -2,51 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="266820cc-723e-4b67-82f3-bbd4312786ce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/Files/PageObjectModel/ILabWebSite.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ThirdTestScript.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Files/Logging/Log.txt.lck" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Framework/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Framework/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Framework/Excutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Framework/Excutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Framework/ObjectMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Framework/ObjectMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Framework/TestManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Framework/TestManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/TestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/TestSuite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ILabAssessment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ILabAssessment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Reports/Report 1561624140441/Libraries/Angular/ReportJs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Reports/Report 1561624140441/Libraries/Angular/angular.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Reports/Report 1561624140441/Libraries/bootstrap/css/bootstrap-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Reports/Report 1561624140441/Libraries/bootstrap/css/bootstrap-theme.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Reports/Report 1561624140441/Libraries/bootstrap/css/bootstrap-theme.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Reports/Report 1561624140441/Libraries/bootstrap/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Reports/Report 1561624140441/Libraries/bootstrap/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Reports/Report 1561624140441/Libraries/bootstrap/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Reports/Report 1561624140441/Libraries/bootstrap/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Reports/Report 1561624140441/Libraries/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Reports/Report 1561624140441/Libraries/bootstrap/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Reports/Report 1561624140441/Libraries/bootstrap/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Reports/Report 1561624140441/Libraries/bootstrap/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Reports/Report 1561624140441/Libraries/bootstrap/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Reports/Report 1561624140441/Libraries/bootstrap/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Reports/Report 1561624140441/Libraries/bootstrap/js/jquery-1.11.3.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Reports/Report 1561624140441/Libraries/bootstrap/js/npm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Reports/Report 1561624140441/Libraries/download/download.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Reports/Report 1561624140441/Libraries/js/controller.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Reports/Report 1561624140441/Libraries/misc/data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Reports/Report 1561624140441/Libraries/misc/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Reports/Report 1561624140441/Libraries/zip/filesaver.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Reports/Report 1561624140441/Libraries/zip/jszip.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Reports/Report 1561624140441/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Reports/Report 1561624140441/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SubmitApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SubmitApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SubmitApplicationNegative.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SubmitApplicationNegative.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Framework/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Framework/BaseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Framework/Excutor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Framework/Excutor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Framework/ObjectMapping.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Framework/ObjectMapping.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Framework/TestManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Framework/TestManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ILabAssessment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ILabAssessment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Models/TestSuite.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/TestSuite.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SubmitApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SubmitApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SubmitApplicationNegative.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SubmitApplicationNegative.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -79,14 +35,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Framework/ObjectMapping.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="66" selection-start-line="66" selection-end-line="66" />
+            <state relative-caret-position="-374">
+              <caret line="17" column="37" lean-forward="true" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor>
+                <caret column="16" selection-start-column="16" selection-end-column="16" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -134,18 +102,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
               <caret line="24" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ThirdTestScript.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -208,7 +164,6 @@
         <option value="$PROJECT_DIR$/src/main/java/Framework/Utils.java" />
         <option value="$PROJECT_DIR$/src/main/java/Framework/EnvironmentManager.java" />
         <option value="$PROJECT_DIR$/src/main/Files/PageObjectModel/ObjFile.txt" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/Framework/Excutor.java" />
         <option value="$PROJECT_DIR$/src/main/java/Models/TestSuite.java" />
         <option value="$PROJECT_DIR$/src/test/java/SubmitApplication.java" />
@@ -220,6 +175,7 @@
         <option value="$PROJECT_DIR$/src/main/java/Framework/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/main/Files/PageObjectModel/ILabWebSite.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Framework/ObjectMapping.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -265,6 +221,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="Files" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Automation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LesetjaSeanegoILabAssessment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="Files" type="462c0819:PsiDirectoryNode" />
+              <item name="Logging" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Automation" type="b2602c69:ProjectViewProjectNode" />
@@ -450,7 +414,7 @@
       <workItem from="1561512731726" duration="17847000" />
       <workItem from="1561552614051" duration="19479000" />
       <workItem from="1561618488888" duration="3322000" />
-      <workItem from="1561622350411" duration="12078000" />
+      <workItem from="1561622350411" duration="12367000" />
     </task>
     <servers />
   </component>
@@ -487,7 +451,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73907000" />
+    <option name="totallyTimeSpent" value="74196000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -500,8 +464,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1913767" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1913767" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -511,7 +476,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49848714" weight="0.31751227" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5786687" weight="0.29787233" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.6134645" visible="true" weight="0.36824876" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6134645" visible="true" weight="0.36824876" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
@@ -881,16 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="17">
-            <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Models/Config.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1022,11 +977,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Framework/ObjectMapping.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        <state relative-caret-position="-374">
+          <caret line="17" column="37" lean-forward="true" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="16" selection-start-column="16" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
