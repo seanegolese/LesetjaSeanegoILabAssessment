@@ -24,7 +24,7 @@ public class ObjectMapping {
     {
         try
         {
-            File file = new File("C:\\Users\\f5035929\\Documents\\Assessment\\src\\main\\Files\\PageObjectModel\\objectsFile.txt");
+            File file = new File("./src/main/Files/PageObjectModel/ObjFile.txt");
 
             BufferedReader br = new BufferedReader(new FileReader(file));
 

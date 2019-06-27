@@ -13,6 +13,8 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
+import static Framework.Utils.logger;
+
 
 public class TestManager {
 
@@ -24,7 +26,7 @@ public class TestManager {
 
 
     TestManager() {
-
+        Utils.LogInit();
         setTestSuite();
     }
 
@@ -44,7 +46,7 @@ public class TestManager {
 
     public static void setTestCase(String Name, String testId) {
         currentTest = new TestCase();
-        currentTest.Id="c558c42b-040f-48be-a6cb-70e8f0765850";
+        currentTest.Id="c558c42b-040f-48be-a6cb-70e8f076585"+testSuite.testCases.size();
         currentTest.name = Name;
         currentTest.QC_ID = testId;
 
@@ -53,6 +55,7 @@ public class TestManager {
 
     public  static void setTestCaseResults()
     {
+        logger.info("Exiting test case "+currentTest.name);
         for(TestStep step:currentTest.TestSteps)
         {
             if(step.Status)
@@ -64,12 +67,18 @@ public class TestManager {
                 currentTest.Status = false;
             }
         }
+        logger.info("Adding "+currentTest.name+" test case to test suite "+testSuite.Name);
         testSuite.testCases.add(currentTest);
     }
 
 
     public static void setSuiteResults()
     {
+
+
+    try
+    {
+
         int failCount=0;
         for(TestCase test:testSuite.testCases)
         {
@@ -79,27 +88,29 @@ public class TestManager {
             }
         }
 
+
         String totalTime="";
-try
-{
-    Utils utils = new Utils();
+        Utils utils = new Utils();
+        DateFormat dateFormat = new SimpleDateFormat("hh:mm:ss");
+        Date start = dateFormat.parse(testSuite.ExecutionDateTime);
+        Date end = dateFormat.parse(utils.getCurrentTime());
+        totalTime =""+(end.getTime()-start.getTime());
 
-    DateFormat dateFormat = new SimpleDateFormat("hh:mm:ss");
-    Date start = dateFormat.parse(testSuite.ExecutionDateTime);
-    Date end = dateFormat.parse(utils.getCurrentTime());
-    totalTime =""+(end.getTime()-start.getTime());
-}
-catch (Exception e)
-{
-
-}
 
         testSuite.ExecutionTime=totalTime;
         testSuite.TestCaseCount=Integer.toString(testSuite.testCases.size());
         testSuite.TotalPass=Integer.toString(testSuite.testCases.size()-failCount);
         testSuite.TotalFail=Integer.toString(failCount);
-        testSuite.PassPercentage=Double.toString(((testSuite.testCases.size()-failCount)/testSuite.testCases.size())*100);
-        testSuite.FailPercentage=Double.toString((failCount/testSuite.testCases.size())*100);
+        testSuite.PassPercentage=Double.toString((((testSuite.testCases.size()-failCount)/testSuite.testCases.size()))*100);
+        testSuite.FailPercentage=Double.toString(((failCount/testSuite.testCases.size()))*100);
+
+
+    }
+    catch (Exception e)
+    {
+
+    }
+
     }
 
 

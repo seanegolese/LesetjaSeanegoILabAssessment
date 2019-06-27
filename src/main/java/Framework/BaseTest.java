@@ -1,7 +1,5 @@
 package Framework;
 
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.*;
 
 import static Framework.EnvironmentManager.createReportDir;
@@ -11,12 +9,22 @@ import static Framework.TestManager.*;
 public class BaseTest extends Excutor{
 
     @BeforeSuite
-    public static void FrameworkSetup()
+    @Parameters({ "Environment", "SuiteName", "url", "driverPath", "Browser","dbConnString","username","passwords"})
+    public static void setRunTimeData(String Environment, String SuiteName, String url, String driverPath,String Browser,
+                                      String dbConnString,String username,String passwords)
     {
-
+        EnvironmentManager.Environment=Environment;
+        EnvironmentManager.SuiteName=SuiteName;
+        EnvironmentManager.url=url;
+        EnvironmentManager.driverPath=driverPath;
+        EnvironmentManager.Browser=Browser;
+        EnvironmentManager.dbConnString=dbConnString;
+        EnvironmentManager.username=username;
+        EnvironmentManager.passwords=passwords;
     }
 
-    @BeforeClass
+
+    @BeforeClass(alwaysRun = true)
     public static void start()
     {
         TestManager testManager = new TestManager();
@@ -26,36 +34,37 @@ public class BaseTest extends Excutor{
 
 
 
-    @BeforeTest
-    public void InitializeTest()
+
+    @BeforeMethod
+    public void StartTest()
     {
         DriverInit();
     }
 
-    @AfterTest
-    public void CloseTest()
-    {
 
+
+    @AfterMethod
+    public void EndTest()
+    {
+        CloseTestCaseExecution();
+        setTestCaseResults();
     }
 
 
-    @AfterClass
+
+    @AfterClass(alwaysRun = true)
     public static void end()
     {
-        driver.quit();
-        setTestCaseResults();
-        setSuiteResults();
-        createReportDir();
-        TestManager.rep();
-
 
     }
 
 
 
     @AfterSuite
-    public static void tearDown()
+    public static void CreateTestSuiteReport()
     {
-
+        setSuiteResults();
+        createReportDir();
+        TestManager.rep();
     }
 }

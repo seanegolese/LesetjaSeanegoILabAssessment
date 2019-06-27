@@ -2,20 +2,30 @@ package Framework;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+
 import org.testng.annotations.DataProvider;
 
 
+
 public class DataManager {
+
+    protected Connection connection;
+
     public static Object[][] excelDataProviderMethod(String folder) {
 
         Object[][] retObjArr = { { folder } };
         try {
             File path = new File("");
             FileInputStream file = new FileInputStream(
-                    new File( "C:\\Users\\f5035929\\Documents\\Assessment\\src\\main\\Files\\TestData\\TestData.xlsx"));
+                    new File( "./src/main/Files/TestData/TestData.xlsx"));
             XSSFWorkbook workbook = new XSSFWorkbook(file);
             XSSFSheet sheet = workbook.getSheet("Details");
 
@@ -29,7 +39,6 @@ public class DataManager {
                     retObjArr[rownum][col] = row.getCell(col).getStringCellValue();
                 }
             }
-            System.out.println("Done" + colCount);
             file.close();
         } catch (Exception e) {
             e.printStackTrace();
@@ -40,9 +49,26 @@ public class DataManager {
 
 
 
+    public void connectToMySqlDatabase()
+    {
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            System.out.println("Connecting to Database...");
+            connection = DriverManager.getConnection(EnvironmentManager.dbConnString, EnvironmentManager.username, EnvironmentManager.passwords);
+            if (connection != null) {
+                System.out.println("Connected to the Database...");
+            }
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        } catch (ClassNotFoundException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+
 
     @DataProvider(name = "Details")
     public static Object[][] ApplicantDetails() {
-        return excelDataProviderMethod("C:\\Users\\f5035929\\Documents\\Assessment\\src\\main\\Files\\TestData\\");
+        return excelDataProviderMethod("./src/main/Files/TestData/");
     }
 }

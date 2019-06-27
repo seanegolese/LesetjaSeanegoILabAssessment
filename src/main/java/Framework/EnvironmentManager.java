@@ -6,13 +6,17 @@ import java.util.Date;
 import static Framework.Utils.copyFolder;
 
 public class EnvironmentManager {
-    public static String Environment ="Production";
-    public static String ProjectFolder;
-    public static String SuiteName="ILAB Assessment";
-    public static String url ="https://www.ilabquality.com/";
-    public static String driverPath="./src/main/Files/WebDriver/";
+    public static String Environment;
+    public static String SuiteName;
+    public static String url;
+    public static String driverPath;
     public static String reportName;
-    public static String Browser ="Chrome";
+    public static String Browser;
+    public static String dbConnString;
+    public static String username;
+    public static String passwords;
+
+
 
     public static void createReportDir()
     {
@@ -24,4 +28,6 @@ public class EnvironmentManager {
             copyFolder("./src/main/Files/RepTemp","./src/test/Reports/"+reportName);
         }
     }
+
+
 }

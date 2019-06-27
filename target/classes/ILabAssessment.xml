@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ILab Submit Application Suite - Production Environment">
+
+	<parameter name="Environment" value="Production" />
+	<parameter name="SuiteName" value="ILAB Assessment" />
+	<parameter name="url" value="https://www.ilabquality.com/" />
+	<parameter name="driverPath" value="./src/main/Files/WebDriver/" />
+	<parameter name="user" value="Lesetja" />
+	<parameter name="Browser" value="Chrome" />
+
+
+	<parameter name="dbConnString" value="ConnectionString" />
+	<parameter name="username" value="lesetja123" />
+	<parameter name="passwords" value="Password" />
+
+
+
+
+
+
+	<listeners>
+
+	</listeners>
+
+
+	<test name="ILab Application">
+		<classes>
+			<class name="SubmitApplication" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->

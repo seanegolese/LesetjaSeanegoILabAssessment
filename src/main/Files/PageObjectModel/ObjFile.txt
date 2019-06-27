@@ -1,0 +1,11 @@
+root~//div[@class='container']//child::a[text()='CAREERS'];
+btnCareers~(//a[text()='CAREERS'])[1];
+lblScouthAfrica~//div[@class='container']//child::a[text()='South Africa'];
+lnkSouthAfrica~(//a[contains(@href,'https://www.ilabquality.com/job/')])[1];
+btnApplyNow~//div[@class='container']//child::a[text()='Apply Online '];
+txtName~//input[@id='applicant_name'];
+txtEmail~//input[@id='email'];
+txtPhone~//input[@id='phone'];
+txMessage~//textarea[@id='message'];
+btnSubmitApplication~//input[@id='wpjb_submit'];
+txtErrorMessage~//span[text()='There are errors in your form.']
