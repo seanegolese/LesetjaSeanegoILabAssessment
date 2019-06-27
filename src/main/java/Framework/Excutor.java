@@ -173,7 +173,7 @@ public class Excutor extends ObjectMapping{
 
     private static WebElement FindElement(String obj,String type)
     {
-        logger.info("Searching and element "+obj);
+        logger.info("Searching for element "+obj);
         try
         {
             switch (type)
