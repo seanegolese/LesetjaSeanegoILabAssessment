@@ -6,6 +6,14 @@ import java.io.FileReader;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.DocumentBuilder;
+import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
+import org.w3c.dom.Node;
+import org.w3c.dom.Element;
+
+
 public class ObjectMapping {
     public static Map<String, String> map = new HashMap<String, String>();
 
@@ -43,4 +51,27 @@ public class ObjectMapping {
         }
 
     }
+
+
+    public static void LoadMap()
+    {
+        try
+        {
+            File inputFile = new File("./src/main/Files/PageObjectModel/ILabWebSite.xml");
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+            Document doc = dBuilder.parse(inputFile);
+
+
+
+
+        }
+        catch (Exception e)
+        {
+
+        }
+
+    }
+
+
 }

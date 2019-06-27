@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objectMapping>
+    <object Id="123">
+        <name>Lesetja</name>
+        <xpath>Seanego</xpath>
+    </object>
+
+
+</objectMapping>

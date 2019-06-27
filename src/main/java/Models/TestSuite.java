@@ -16,7 +16,7 @@ public class TestSuite {
     public String FailPercentage;
     public List<TestCase> testCases = new ArrayList<TestCase>();
     public String EnvironmentName;
-    public ArrayList<String> browser = new ArrayList<String>();
+    public ArrayList<String> BrowserName = new ArrayList<String>();
     public ArrayList<String> ScheduledScripts = new ArrayList<String>();
     public ArrayList<String> ScriptsNotRun  = new ArrayList<String>();
 }

@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.util.Arrays;
@@ -39,7 +40,7 @@ public class Excutor extends ObjectMapping{
             actual=TestManager.testStep.Expected+" performed successfully";
         }
         else
-            actual = obj + "is not found on the browser";
+            actual = obj + "is not found on the BrowserName";
 
         TestManager.setStepResults(actual, ((TakesScreenshot)driver).getScreenshotAs(OutputType.BASE64), objectExist);
     }
@@ -67,9 +68,14 @@ public class Excutor extends ObjectMapping{
                 driver = new InternetExplorerDriver(caps);
                 break;
             case "FireFox":
+                System.setProperty("webdriver.gecko.driver", EnvironmentManager.driverPath+"geckodriver.exe");
                 driver = new FirefoxDriver();
-
             break;
+
+            case "Opera":
+                System.setProperty("webdriver.opera.driver", EnvironmentManager.driverPath+"OperaSetup.exe");
+                driver =new OperaDriver();
+                break;
 
         }
 
@@ -143,7 +149,7 @@ public class Excutor extends ObjectMapping{
 
     public static void TextIs(String obj,String type,String text)
     {
-        logger.info("Checking if provided text match what is displayed on the browser :");
+        logger.info("Checking if provided text match what is displayed on the BrowserName :");
         String val = FindElement(obj,type).getText();
         String actual ="";
         boolean sameText;

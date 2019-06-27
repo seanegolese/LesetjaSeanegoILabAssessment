@@ -27,6 +27,9 @@ public class BaseTest extends Excutor{
     @BeforeClass(alwaysRun = true)
     public static void start()
     {
+        LoadMap();
+
+
         TestManager testManager = new TestManager();
         ObjectMapping obj = new ObjectMapping();
         obj.loadObjectFile();

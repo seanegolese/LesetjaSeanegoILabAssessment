@@ -7,14 +7,12 @@
 	<parameter name="url" value="https://www.ilabquality.com/" />
 	<parameter name="driverPath" value="./src/main/Files/WebDriver/" />
 	<parameter name="user" value="Lesetja" />
-	<parameter name="Browser" value="IE" />
+	<parameter name="Browser" value="Chrome" />
 
 
 	<parameter name="dbConnString" value="ConnectionString" />
 	<parameter name="username" value="lesetja123" />
 	<parameter name="passwords" value="Password" />
-
-
 
 
 	<listeners>
@@ -25,6 +23,8 @@
 	<test name="ILab Application">
 		<classes>
 			<class name="SubmitApplication" />
+			<class name="SubmitApplicationNegative" />
+			<class name="ThirdTestScript" />
 		</classes>
 	</test> <!-- Test -->
 
