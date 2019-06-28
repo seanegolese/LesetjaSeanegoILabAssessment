@@ -6,9 +6,12 @@ import Models.TestStep;
 import Models.TestSuite;
 import com.google.gson.Gson;
 
+import java.awt.*;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.text.DateFormat;
+import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -78,6 +81,17 @@ public class TestManager {
     }
 
 
+    public static  void openReport()
+    {
+        try {
+            File htmlFile = new File("./src/test/Reports/"+EnvironmentManager.reportName+"/index.html");
+            Desktop.getDesktop().browse(htmlFile.toURI());
+        }
+        catch (Exception e) {
+
+        }
+    }
+
     public static void setSuiteResults()
     {
             try
@@ -100,8 +114,11 @@ public class TestManager {
                 testSuite.TotalFail=Integer.toString(failCount);
                 testSuite.BrowserName.add(EnvironmentManager.Browser);
 
-                testSuite.PassPercentage=Double.toString((Double.valueOf(testSuite.TotalPass)/Double.valueOf(testSuite.testCases.size()))*100);
-                testSuite.FailPercentage=Double.toString((Double.valueOf(testSuite.TotalFail)/Double.valueOf(testSuite.testCases.size()))*100);
+                DecimalFormat df1 = new DecimalFormat("0.##");
+
+
+                testSuite.PassPercentage=df1.format(((Double.valueOf(testSuite.TotalPass)/Double.valueOf(testSuite.testCases.size()))*100));
+                testSuite.FailPercentage=df1.format(((Double.valueOf(testSuite.TotalFail)/Double.valueOf(testSuite.testCases.size()))*100));
 
 
             }

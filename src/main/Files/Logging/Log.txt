@@ -1,0 +1,168 @@
+Jun 28, 2019 9:25:08 AM Framework.Excutor DriverInit
+INFO: Executing using Chrome Driver
+Jun 28, 2019 9:25:11 AM Framework.Excutor setTestCase
+INFO: Initializing test case Submit ILab application
+Jun 28, 2019 9:25:44 AM Framework.Excutor Click
+INFO: Performing click on objectbtnCareers using XPATH
+Jun 28, 2019 9:25:44 AM Framework.Excutor FindElement
+INFO: Searching for element btnCareers
+Jun 28, 2019 9:25:44 AM Framework.Excutor FindElement
+INFO: Searching for element btnCareers
+Jun 28, 2019 9:25:44 AM Framework.Excutor ScrollToElement
+INFO: Perform scroll to element
+Jun 28, 2019 9:25:44 AM Framework.Excutor FindElement
+INFO: Searching for element btnCareers
+Jun 28, 2019 9:25:45 AM Framework.Excutor FindElement
+INFO: Searching for element btnCareers
+Jun 28, 2019 9:25:45 AM Framework.Excutor FindElement
+INFO: Searching for element btnCareers
+Jun 28, 2019 9:25:45 AM Framework.Excutor FindElement
+INFO: Searching for element btnCareers
+Jun 28, 2019 9:25:50 AM Framework.Excutor Click
+INFO: Performing click on objectlblScouthAfrica using XPATH
+Jun 28, 2019 9:25:50 AM Framework.Excutor FindElement
+INFO: Searching for element lblScouthAfrica
+Jun 28, 2019 9:25:50 AM Framework.Excutor FindElement
+INFO: Searching for element lblScouthAfrica
+Jun 28, 2019 9:25:50 AM Framework.Excutor ScrollToElement
+INFO: Perform scroll to element
+Jun 28, 2019 9:25:50 AM Framework.Excutor FindElement
+INFO: Searching for element lblScouthAfrica
+Jun 28, 2019 9:25:51 AM Framework.Excutor FindElement
+INFO: Searching for element lblScouthAfrica
+Jun 28, 2019 9:25:51 AM Framework.Excutor FindElement
+INFO: Searching for element lblScouthAfrica
+Jun 28, 2019 9:25:51 AM Framework.Excutor FindElement
+INFO: Searching for element lblScouthAfrica
+Jun 28, 2019 9:25:58 AM Framework.Excutor Click
+INFO: Performing click on objectlnkSouthAfrica using XPATH
+Jun 28, 2019 9:25:58 AM Framework.Excutor FindElement
+INFO: Searching for element lnkSouthAfrica
+Jun 28, 2019 9:25:59 AM Framework.Excutor FindElement
+INFO: Searching for element lnkSouthAfrica
+Jun 28, 2019 9:25:59 AM Framework.Excutor ScrollToElement
+INFO: Perform scroll to element
+Jun 28, 2019 9:25:59 AM Framework.Excutor FindElement
+INFO: Searching for element lnkSouthAfrica
+Jun 28, 2019 9:25:59 AM Framework.Excutor FindElement
+INFO: Searching for element lnkSouthAfrica
+Jun 28, 2019 9:25:59 AM Framework.Excutor FindElement
+INFO: Searching for element lnkSouthAfrica
+Jun 28, 2019 9:25:59 AM Framework.Excutor FindElement
+INFO: Searching for element lnkSouthAfrica
+Jun 28, 2019 9:26:04 AM Framework.Excutor Click
+INFO: Performing click on objectbtnApplyNow using XPATH
+Jun 28, 2019 9:26:04 AM Framework.Excutor FindElement
+INFO: Searching for element btnApplyNow
+Jun 28, 2019 9:26:04 AM Framework.Excutor FindElement
+INFO: Searching for element btnApplyNow
+Jun 28, 2019 9:26:04 AM Framework.Excutor ScrollToElement
+INFO: Perform scroll to element
+Jun 28, 2019 9:26:04 AM Framework.Excutor FindElement
+INFO: Searching for element btnApplyNow
+Jun 28, 2019 9:26:04 AM Framework.Excutor FindElement
+INFO: Searching for element btnApplyNow
+Jun 28, 2019 9:26:05 AM Framework.Excutor FindElement
+INFO: Searching for element btnApplyNow
+Jun 28, 2019 9:26:05 AM Framework.Excutor FindElement
+INFO: Searching for element btnApplyNow
+Jun 28, 2019 9:26:05 AM Framework.Excutor ScrollDown
+INFO: Perform scroll down
+Jun 28, 2019 9:26:05 AM Framework.Excutor ClearAndType
+INFO: Performing Clear and Type action on objecttxtName using XPATH with value :Lesetja Seanego
+Jun 28, 2019 9:26:05 AM Framework.Excutor FindElement
+INFO: Searching for element txtName
+Jun 28, 2019 9:26:05 AM Framework.Excutor FindElement
+INFO: Searching for element txtName
+Jun 28, 2019 9:26:05 AM Framework.Excutor ScrollToElement
+INFO: Perform scroll to element
+Jun 28, 2019 9:26:05 AM Framework.Excutor FindElement
+INFO: Searching for element txtName
+Jun 28, 2019 9:26:05 AM Framework.Excutor FindElement
+INFO: Searching for element txtName
+Jun 28, 2019 9:26:05 AM Framework.Excutor FindElement
+INFO: Searching for element txtName
+Jun 28, 2019 9:26:05 AM Framework.Excutor FindElement
+INFO: Searching for element txtName
+Jun 28, 2019 9:26:06 AM Framework.Excutor FindElement
+INFO: Searching for element txtName
+Jun 28, 2019 9:26:06 AM Framework.Excutor ClearAndType
+INFO: Performing Clear and Type action on objecttxtEmail using XPATH with value :automationassesment@ilabquality.com
+Jun 28, 2019 9:26:06 AM Framework.Excutor FindElement
+INFO: Searching for element txtEmail
+Jun 28, 2019 9:26:06 AM Framework.Excutor FindElement
+INFO: Searching for element txtEmail
+Jun 28, 2019 9:26:06 AM Framework.Excutor ScrollToElement
+INFO: Perform scroll to element
+Jun 28, 2019 9:26:06 AM Framework.Excutor FindElement
+INFO: Searching for element txtEmail
+Jun 28, 2019 9:26:06 AM Framework.Excutor FindElement
+INFO: Searching for element txtEmail
+Jun 28, 2019 9:26:06 AM Framework.Excutor FindElement
+INFO: Searching for element txtEmail
+Jun 28, 2019 9:26:06 AM Framework.Excutor FindElement
+INFO: Searching for element txtEmail
+Jun 28, 2019 9:26:07 AM Framework.Excutor FindElement
+INFO: Searching for element txtEmail
+Jun 28, 2019 9:26:07 AM Framework.Excutor ClearAndType
+INFO: Performing Clear and Type action on objecttxtPhone using XPATH with value :0839038335
+Jun 28, 2019 9:26:07 AM Framework.Excutor FindElement
+INFO: Searching for element txtPhone
+Jun 28, 2019 9:26:07 AM Framework.Excutor FindElement
+INFO: Searching for element txtPhone
+Jun 28, 2019 9:26:07 AM Framework.Excutor ScrollToElement
+INFO: Perform scroll to element
+Jun 28, 2019 9:26:07 AM Framework.Excutor FindElement
+INFO: Searching for element txtPhone
+Jun 28, 2019 9:26:07 AM Framework.Excutor FindElement
+INFO: Searching for element txtPhone
+Jun 28, 2019 9:26:07 AM Framework.Excutor FindElement
+INFO: Searching for element txtPhone
+Jun 28, 2019 9:26:07 AM Framework.Excutor FindElement
+INFO: Searching for element txtPhone
+Jun 28, 2019 9:26:07 AM Framework.Excutor FindElement
+INFO: Searching for element txtPhone
+Jun 28, 2019 9:26:07 AM Framework.Excutor ClearAndType
+INFO: Performing Clear and Type action on objecttxMessage using XPATH with value :Lesetja Lesetja Lesetja Application
+Jun 28, 2019 9:26:07 AM Framework.Excutor FindElement
+INFO: Searching for element txMessage
+Jun 28, 2019 9:26:08 AM Framework.Excutor FindElement
+INFO: Searching for element txMessage
+Jun 28, 2019 9:26:08 AM Framework.Excutor ScrollToElement
+INFO: Perform scroll to element
+Jun 28, 2019 9:26:08 AM Framework.Excutor FindElement
+INFO: Searching for element txMessage
+Jun 28, 2019 9:26:08 AM Framework.Excutor FindElement
+INFO: Searching for element txMessage
+Jun 28, 2019 9:26:08 AM Framework.Excutor FindElement
+INFO: Searching for element txMessage
+Jun 28, 2019 9:26:08 AM Framework.Excutor FindElement
+INFO: Searching for element txMessage
+Jun 28, 2019 9:26:08 AM Framework.Excutor FindElement
+INFO: Searching for element txMessage
+Jun 28, 2019 9:26:09 AM Framework.Excutor Click
+INFO: Performing click on objectbtnSubmitApplication using XPATH
+Jun 28, 2019 9:26:09 AM Framework.Excutor FindElement
+INFO: Searching for element btnSubmitApplication
+Jun 28, 2019 9:26:09 AM Framework.Excutor FindElement
+INFO: Searching for element btnSubmitApplication
+Jun 28, 2019 9:26:09 AM Framework.Excutor ScrollToElement
+INFO: Perform scroll to element
+Jun 28, 2019 9:26:09 AM Framework.Excutor FindElement
+INFO: Searching for element btnSubmitApplication
+Jun 28, 2019 9:26:09 AM Framework.Excutor FindElement
+INFO: Searching for element btnSubmitApplication
+Jun 28, 2019 9:26:09 AM Framework.Excutor FindElement
+INFO: Searching for element btnSubmitApplication
+Jun 28, 2019 9:26:09 AM Framework.Excutor FindElement
+INFO: Searching for element btnSubmitApplication
+Jun 28, 2019 9:26:11 AM Framework.Excutor TextIs
+INFO: Checking if provided text match what is displayed on the BrowserName :
+Jun 28, 2019 9:26:11 AM Framework.Excutor FindElement
+INFO: Searching for element txtErrorMessage
+Jun 28, 2019 9:26:11 AM Framework.Excutor TextIs
+INFO: Expected :There are errors in your form. Actual :There are errors in your form.
+Jun 28, 2019 9:26:13 AM Framework.TestManager setTestCaseResults
+INFO: Exiting test case Submit ILab application
+Jun 28, 2019 9:26:13 AM Framework.TestManager setTestCaseResults
+INFO: Adding Submit ILab application test case to test suite ILAB Assessment

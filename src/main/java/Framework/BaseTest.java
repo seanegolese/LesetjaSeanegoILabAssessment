@@ -51,6 +51,7 @@ public class BaseTest extends Excutor{
     {
         CloseTestCaseExecution();
         setTestCaseResults();
+        openReport();
     }
 
 

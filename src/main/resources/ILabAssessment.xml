@@ -24,7 +24,7 @@
 		<classes>
 			<class name="SubmitApplication" />
 		<!--	<class name="SubmitApplicationNegative" />
-			<class name="ThirdTestScript" />  -->
+			<class name="ThirdTestScript" />   -->
 		</classes>
 	</test> <!-- Test -->
 
