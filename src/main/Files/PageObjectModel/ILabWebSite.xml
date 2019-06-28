@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <objectMapping>
-    <object Id="123">
-        <name>Lesetja</name>
-        <xpath>Seanego</xpath>
-    </object>
 
+    <object name="btnCareers" xpath="//div[@class='container']//child::a[text()='CAREERS']"></object>
+    <object name="lblScouthAfrica" xpath="//div[@class='container']//child::a[text()='South Africa']"></object>
+    <object name="lnkSouthAfrica" xpath="(//a[contains(@href,'https://www.ilabquality.com/job/')])[1]"></object>
+    <object name="btnApplyNow" xpath="//div[@class='container']//child::a[text()='Apply Online ']"></object>
+    <object name="txtName" xpath="//input[@id='applicant_name']"></object>
+    <object name="txtEmail" xpath="//input[@id='email']"></object>
+    <object name="txtPhone" xpath="//input[@id='phone']"></object>
+    <object name="txMessage" xpath="//textarea[@id='message']"></object>
+    <object name="btnSubmitApplication" xpath="//input[@id='wpjb_submit']"></object>
+    <object name="txtErrorMessage" xpath="//span[text()='There are errors in your form.']"></object>
 
 </objectMapping>

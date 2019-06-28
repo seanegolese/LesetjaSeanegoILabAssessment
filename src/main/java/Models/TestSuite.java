@@ -1,5 +1,6 @@
 package Models;
 
+import java.util.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,7 +8,7 @@ public class TestSuite {
     public String Name;
     public String Id;
     public String ProjectId;
-    public String ExecutionDateTime;
+    public long ExecutionDateTime;
     public String ExecutionTime;
     public String TestCaseCount;
     public String TotalPass;

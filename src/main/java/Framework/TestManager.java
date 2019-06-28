@@ -13,6 +13,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
+
 import static Framework.Utils.logger;
 
 
@@ -25,6 +26,9 @@ public class TestManager {
     public static TestStep testStep;
 
 
+
+    static long startTime;
+
     TestManager() {
         Utils.LogInit();
         setTestSuite();
@@ -32,14 +36,16 @@ public class TestManager {
 
 
     public static void setTestSuite() {
-        Utils utils = new Utils();
+
+         Date date= new Date();
         testSuite.Name =EnvironmentManager.SuiteName;
         testSuite.Id="961cc3ab-18a4-40fc-adeb-aa07aee247de";
         testSuite.ProjectId="c558c42b-040f-48be-a6cb-70e8f0765850";
-        testSuite.ExecutionDateTime=utils.getCurrentTime();
+
+        startTime=date.getTime();
+        testSuite.ExecutionDateTime=date.getTime();
 
         testSuite.EnvironmentName=EnvironmentManager.Environment;
-        testSuite.BrowserName.add(EnvironmentManager.Browser);
         testSuite.ScheduledScripts.add("a");
 
     }
@@ -74,43 +80,35 @@ public class TestManager {
 
     public static void setSuiteResults()
     {
-
-
-    try
-    {
-
-        int failCount=0;
-        for(TestCase test:testSuite.testCases)
-        {
-            if(!test.Status)
+            try
             {
-                failCount++;
+
+                int failCount=0;
+                for(TestCase test:testSuite.testCases)
+                {
+                    if(!test.Status)
+                    {
+                        failCount++;
+                    }
+                }
+                Date date= new Date();
+
+
+                testSuite.ExecutionTime="";
+                testSuite.TestCaseCount=Integer.toString(testSuite.testCases.size());
+                testSuite.TotalPass=Integer.toString(testSuite.testCases.size()-failCount);
+                testSuite.TotalFail=Integer.toString(failCount);
+                testSuite.BrowserName.add(EnvironmentManager.Browser);
+
+                testSuite.PassPercentage=Double.toString((Double.valueOf(testSuite.TotalPass)/Double.valueOf(testSuite.testCases.size()))*100);
+                testSuite.FailPercentage=Double.toString((Double.valueOf(testSuite.TotalFail)/Double.valueOf(testSuite.testCases.size()))*100);
+
+
             }
-        }
+            catch (Exception e)
+            {
 
-/**
-        String totalTime="";
-        Utils utils = new Utils();
-        DateFormat dateFormat = new SimpleDateFormat("hh:mm:ss");
-        Date start = dateFormat.parse(testSuite.ExecutionDateTime);
-        Date end = dateFormat.parse(utils.getCurrentTime());
-        totalTime =""+(end.getTime()-start.getTime());
-**/
-
-        testSuite.ExecutionTime="00:00:00";
-        testSuite.TestCaseCount=Integer.toString(testSuite.testCases.size());
-        testSuite.TotalPass=Integer.toString(testSuite.testCases.size()-failCount);
-        testSuite.TotalFail=Integer.toString(failCount);
-        testSuite.PassPercentage="75";
-        testSuite.FailPercentage="25";
-
-
-    }
-    catch (Exception e)
-    {
-
-    }
-
+            }
     }
 
 

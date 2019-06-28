@@ -23,8 +23,8 @@
 	<test name="ILab Application">
 		<classes>
 			<class name="SubmitApplication" />
-			<class name="SubmitApplicationNegative" />
-			<class name="ThirdTestScript" />
+		<!--	<class name="SubmitApplicationNegative" />
+			<class name="ThirdTestScript" />  -->
 		</classes>
 	</test> <!-- Test -->
 

@@ -1,5 +1,5 @@
 root~//div[@class='container']//child::a[text()='CAREERS'];
-btnCareers~(//a[text()='CAREERS'])[1];
+btnCareers~//div[@class='container']//child::a[text()='CAREERS'];
 lblScouthAfrica~//div[@class='container']//child::a[text()='South Africa'];
 lnkSouthAfrica~(//a[contains(@href,'https://www.ilabquality.com/job/')])[1];
 btnApplyNow~//div[@class='container']//child::a[text()='Apply Online '];

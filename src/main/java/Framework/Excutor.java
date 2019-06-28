@@ -31,8 +31,9 @@ public class Excutor extends ObjectMapping{
         TestManager.setTestStep(description, expected);
     }
 
-    private static void report(String obj,String type)
+    private static void report(String obj,String type,boolean actionType,String val)
     {
+
         String actual ="";
         boolean objectExist = FindElement(obj,type).isDisplayed();
         if(objectExist)
@@ -42,7 +43,33 @@ public class Excutor extends ObjectMapping{
         else
             actual = obj + "is not found on the BrowserName";
 
+        String originalstyle =FindElement(obj,type).getAttribute("style");
+
+        ScrollToElement(obj);
+if(actionType)
+{
+    FindElement(obj,type).clear();
+    FindElement(obj,type).sendKeys(val);
+}
+
+
+
+        if (driver instanceof JavascriptExecutor) {
+            ((JavascriptExecutor)driver).executeScript("arguments[0].style.border='3px solid red'", FindElement(obj,type));
+        }
+
         TestManager.setStepResults(actual, ((TakesScreenshot)driver).getScreenshotAs(OutputType.BASE64), objectExist);
+
+        ((JavascriptExecutor)driver).executeScript("arguments[0].removeAttribute('style')", FindElement(obj,type));
+        ((JavascriptExecutor)driver).executeScript("arguments[0].setAttribute('style', arguments[1]);",FindElement(obj,type), originalstyle);
+try{
+    Thread.sleep(30);
+}
+catch (Exception e)
+        {
+
+        }
+
     }
 
 
@@ -99,23 +126,23 @@ public class Excutor extends ObjectMapping{
     public static void Click(String obj,String type)
     {
         logger.info("Performing click on object"+obj+" using "+type);
-        report(obj,type);
+        report(obj,type,false,"");
         FindElement(obj,type).click();
     }
 
     public static void Type(String obj,String type,String val)
     {
         logger.info("Performing Type action on object"+obj+" using "+type+" with value :"+val);
-        report(obj,type);
-        FindElement(obj,type).sendKeys(val);
+        report(obj,type,true,val);
+      //  FindElement(obj,type).sendKeys(val);
     }
 
     public static void ClearAndType(String obj,String type,String val)
     {
         logger.info("Performing Clear and Type action on object"+obj+" using "+type+" with value :"+val);
-        report(obj,type);
-        FindElement(obj,type).clear();
-        FindElement(obj,type).sendKeys(val);
+        report(obj,type,true,val);
+      //  FindElement(obj,type).clear();
+       // FindElement(obj,type).sendKeys(val);
     }
 
 
